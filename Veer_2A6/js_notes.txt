@@ -550,3 +550,9 @@ document.getElementById9("para"0.innerHTML+=rooms[i]+"<br>"
 
 ===>>onmouse enter and onmouse leave
 whenever cursor is on the image it changes 
+
+
+IMP things
+Try never excutes only catch and finally does in a js
+X == null (to check whether x is null or not)
+document.getelementbyid("para").innerHtml +=rooms[i]+"<br>"
