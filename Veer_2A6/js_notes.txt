@@ -548,7 +548,7 @@ document.getElementById9("para"0.innerHTML+=rooms[i]+"<br>"
 
 ===================================================================================================================================
 
-===>>onmouse enter and onmouse leave
+===>>onmousenter(onmouseover) and onmouseleave(onmouseout)
 whenever cursor is on the image it changes 
 
 
@@ -561,3 +561,9 @@ get method we dont have a restrictions for the length ===>> false
 post mathod stores the history===>>>
 post method using for the sesnsitive data++.
 get method used for unsensitive data==>>>
+
+prompt()method returns undefinded when the user closed the prompt===>>>False since it returns empty when remains empty
+prompt() method blocks further scripts excption until the user responds ===>> True
+if the user cancel the prompt it returns null==>> true
+prompt method always returns a string ==>> True
+
