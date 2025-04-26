@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="same"></p>
+    <button onclick="myfunction()">Click here</button>
+<script>
+    function myfunction(){
+document.getElementById("same").innerHTML=new Date()
+document.body.style.backgroundColor="lightpink"
+document.getElementById("same").style.color="red"
+document.body.style.backgroundImage="url('https://images.unsplash.com/photo-1733684964669-bfdf0f0747e6?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHx8fA%3D%3D')"
+document.body.style.backgroundRepeat="no-repeat"
+document.body.style.backgroundSize="cover"
+
+    }
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="pi">hello</p>
+    <button onclick="myfunction()">click here</button>
+
+<script>
+    let color=['blue','red','pink','lightblue','gray','lightpink','oragne','black','brown']
+    let index=0
+
+    function myfunction(){
+document.getElementById("pi").innerHTML=Date()
+
+document.getElementById("pi").style.backgroundColor=color[index]
+document.body.style.backgroundColor=color[index+0]
+index=(index+1)%color.length
+
+    }
+
+</script>
+
+
+</body>
+</html>

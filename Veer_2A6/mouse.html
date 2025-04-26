@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<!-- mocktest queston -->
+<img src="https://images.pexels.com/photos/2101187/pexels-photo-2101187.jpeg?auto=compress&cs=tinysrgb&w=600" alt="this are flowers" height="200px" width="350px" id="hi" onmouseover="imagess()" onmouseleave="leave()">
+<!-- <button onclick="imagess()" ondblclick="leave()">click me</button> -->
+<script>
+    function imagess(){
+        let x=document.getElementById("hi")
+        x.setAttribute('src','https://images.pexels.com/photos/1322185/pexels-photo-1322185.jpeg?auto=compress&cs=tinysrgb&w=600')
+
+    }
+
+    function leave(){
+        let y=document.getElementById("hi")
+        y.setAttribute('src','https://images.pexels.com/photos/2101187/pexels-photo-2101187.jpeg?auto=compress&cs=tinysrgb&w=600')
+
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,552 @@
+if you not declare the property js will defaulty take ver property because its the oldest version
+
+in js + will append and add while - will ony substarction so keep that in mind.
+and same goes for all the operator so       
+
+typeof() is used for identifying the datatypes...
+
+
+
+very very important code::
+		let x1=10;
+        let y1=x1+"20";
+        console.log(y1);
+
+
+== checking a value (use of this thing)
+=== checks the values and types also 
+
+so what is the best practice here?
+i dont know because i dont do practice....
+
+note::
+	when we are comparing 2 values of different types the one type will force other to change it type as well so that comparison can be made ppossible.
+
+what is use of const??
+using const we cannot reassign the value because constant is fixed like it has it in name constant even a 7 year old will know that
+using const property in arrays and objects we cannot reassign the values but we can change the elements.
+
+
+
+ex ::const clg="parul"
+clg="sumandeep"
+console.log(clg)
+
+you will get error in this thing 
+
+hoisting is nothing but first assigning the value than declare the value
+ex:::   sname="heyy"
+	var sname
+	console.log(sname)
+
+hoisting only works with ver propery otherwise it will give error
+
+in var you can give multiple values but in let it will give error
+ex :::  var age=20;
+	var age=30;
+	console.log(age)
+
+varaibles are the name of memory locations where the date is stored...
+ex:: anything can be variables as long as it doesnt have the name of anything that already exsits like console or anyhing like that
+
+naming convention==>
+	same as in c like always begins with letter,$ or underscore
+	they are case sensitive for ex. x and X are different 
+valid: xyz,_hello,$adress
+Invalid: &fhp, 12name
+
+there are three ways to declare a variable in js
+var:declares a variable
+let: declares a block variable
+const: delcares a block constant
+
+
+
+==> Different ways of writing joint varaibles in js
+
+underscore(_) is a snake casing rule:
+first_name, city_name
+
+uppercamel case (pascal case): 
+FirstName, CityName
+
+lowercamel case:
+firstName, cityName
+
+==> Popup boxes:
+alert ()
+prompt()
+confirm()
+
+-->prompt() : taking the input from the user
+-->confirm(): to confirm something from the user
+=====================================================================================================================================================================================================
+																						  									  Date : 22/04/2025
+=>> global varaible and local varaible 
+
+using global varible we can access inside the function also ooutside the function also(anywhere by anyplace)
+
+using local variable we can only access inside the function 
+example:
+	console.log("here console is the object and log is the method")
+window is the parent of the console(object)
+confirm()
+prompt()
+
+global scope :we can access the value inside the function and outside the function
+
+
+function scope:we can access value only inside the function
+
+
+block scope:{}using let property we can access the value inside the block only outside the block it will be invalid
+	     using var property we can access the value inside the block and also outside the block
+
+reference variable::
+		its nothing but it holds the adress of the variable
+
+::::::::datatypes:::::
+datatypes are divided into two categories 
+1)primintive datatypes
+2)non-primitive datetypes
+
+we have 8 datatypes 7 are primitive and one is non primitive
+number
+string 
+undefined
+boolean
+null
+bigint
+symbol
+
+===>non primitive one ===>> object(arrays and regexp are treated as objects)
+
+string is a collection of character 
+backticks used to write multiple lines within one console function just like fstrings in python
+boolean it is used to assign a varaible either true or false
+undefined it is used to specify a value of a variable which is not defined at
+Null it is used to expicitly specify that the value of a variable is null 
+	Null is an object 
+bigint 
+let k=123458989032787382712865342354523452465657684784673n
+console.log(k)
+console.log(typeof(k))
+==>USE N AT THE END TO PRNIT THE FULL VALUE OR ELSE IT WILL PRINT EXPONETNATIAL ONE
+
+//symbol it is used to create the unique values(Mock test Question)
+let sym=Symbol("hii")
+let sym1=Symbol("hii")
+console.log(sym==sym1)//False output 
+
+differnece between undefined and null 
+1)undefinded and null values are equal but types are different 
+
+==>>length method 
+	lenght always starts with 1 and space also counted
+example::::
+let sname="Veer"
+console.log(sname.length)
+
+===>>STRINGS
+strings in js are primitive value,created from literal 
+strings can also be defined as objects with keyword new 
+examples let x = new String("Hello")
+	 let y = new String("Hello")
+	 console.log(x==y) ===>>>Output will be false as both are different objects
+
+OBJECT===>> Object is a real world entity 
+It has two parts has(properties) and does(Behvaiour)
+properties are varaible while behaviour is functions
+
+for example student is an object, his name,age,rollno are variables
+				while eating sleeping are his functions
+String methods
+there are 3 methods for extracting a part of string 
+slice
+substring
+substr
+
+slic method():
+slice extracts a part of a string and returns the extracted part in a new string 
+
+if second parameter is none than whole value will be included like = console.log(a.slice(6))
+
+substring
+this method is similar to slice method but negative index is not possible
+
+substr
+it is similar to slice method but the second parameter specifies the length of the extracted part.
+
+==>>replace method 
+	it replaces a specified value with another value in a string
+ex:::let text="Good morning"
+console.log(text.replace("morning","afternoon"))
+it does not change the string rather it creates a new string
+replace method replaces only first match
+
+gfrag==>>global frag (in this all matches will be replaced) /string/g
+ifrag==>in case sensitive(to overcome the case sensitive replacement) /string/i
+
+//conact used to add two or more string 
+
+trim method ==> it removes the spaces at the beggining and ending of the value but it doesnt remove the center space
+
+split method
+it converts string to array 
+
+different string operations:::
+let c1="Apple"
+console.log(c1.indexOf("e"))
+console.log(c1.indexOf("p"))
+console.log(c1.startsWith("Ap"))
+console.log(c1.endsWith("e"))
+console.log(c1.includes("pp"))
+console.log(c1.search("2"))
+
+
+
+Non premitive datatypes-- Objects
+it can be created using two ways
+object literal :: It is a collection of key value pairs.It is defined within curly braces{},Objects represents real entities.
+New keyword
+
+object comparison
+== and === and Objectis() used to check referential equality
+
+let animal=new Object()
+let cat= animal
+let dog= animal
+console.log(cat==dog)//true
+
+let horse=new Object()
+console.log(cat==horse)//false
+console.log(Object.is(cat,horse))//false
+
+Constant Objects and Arrays
+using constant you cannot
+	reassign a constant value
+	reassign a constant array
+	reassing a constant object
+
+using a constant you can 
+	change the elements of constant array
+	change the properties of constant object
+
+using constant reassinging is not possible but we can change the elements using indexing 
+
+push method 
+	it adds the element at the last index
+pop method 
+	it removes the element at the last index
+unshift method 
+	it adds the elements at the beginning
+shift method 
+	it removes the element at the beginning 
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+													        || DATE= 23/04/2025
+constant object
+	using constant reassignment is not possible in arrays an object
+
+arrays
+	In c programming langauage arrays are homogenous elements(storing only same datatypes)
+	In js arrays are heterogenous elements(different datatypes) 
+==>>If you want to store small amount of data we are using the varaibles 
+==>>If you want to store large amount of data than use the arrays 
+==>>Using arrays accessing the value its very easy
+
+it is defined in square brackets[]
+	array index starts friom 0 and elements can be accessed by referring to the index number
+example:
+var a=[1,true,'hello']
+a[2]
+Output: "hello"
+
+==>If your elements goes out of bound than it will give undefined as the output 
+
+splice method
+	splice is used to add new elements in the array from specified to and form index
+slice method
+	it used to create a new array from existing array
+
+==>>Array sorting 
+THe sort() method is used to sort the array alphabatically
+the reverse() method is used to reverse sort the array 
+
+==>>Date object
+it cane be used to get year,month and day
+you can use 4 variant of date constructor 
+	date()
+	daet(milisecond)
+	date(date String)
+	date(year,month,day,hour,minute,second,milisecond)
+
+set methods i would prefer this method more than get one 
+date.setFullYear(2025,3,23)
+document.writeln(date)
+
+converting values to number 
+there are apparently 3 methods:
+number method = returns a number
+parseInt() method
+parseFloat() method
+
+OPERATORS IN javascript
+unary 
+arithmethic
+shift
+relational 
+bitwise 
+assignment
+logical
+ternary
+		operators are symbols that are used to perform operations on operands
+Unary operator
+	there are two main types which are
+increment(a++) and decrement(a--)
+those two also have subtypes like post and pre
+A(left operand)+(operator)+B(right operand)
+
+to string method 
+to convert number into string
+
+to exponential method()
+it returns a string,with a number rounded and witten using exponential notation
+
+toFixed() method
+it returns a string with the number written with a specified number of decimal
+
+toPrecision method
+it returns a string with numbe written with a specified length
+
+assignment operator
+=
+a+=10
+a-=10
+a*=10
+a/=10
+this question is in the mock test 
+
+====>>>shift operator
+left shift (<<)
+right shift(>>)
+
+for left shift multiply by 2 
+for right shift divide by 2
+
+===>>> relational operator
+it comprises operators for comparisons. output will be in boolean format
+== and === are used in this 
+
+--->>Type coercion
+when we are comparing 2 values of different types the one will force other to chnage it type as well so that comparison can be made possible.
+=== can stop coercion
+
+===+++>>Bitwise operator
+and(&) 
+or (|)
+not(~)
+xor(^)
+I already knew this 
+-----------------------------------------------------------------------------------------------------------------------------------
+														   Date: 24/04/2025
+Logical operator
+&& returns true when both conditons are true
+|| returns true when either one of the condition is true
+! returns true when condition evaluate to false
+
+if the expression is true than youll get the output as false
+while if the expression is false yuo will get the output as true
+
+===>>>assignment operator
+it is used to assign right hand side value to the left hand side variable
+
+====>>>Ternay operator 
+it is an altrenative of if else 
+console.log(condition)?console.log(if cond is true):console.log(if cond is not true)
+
+prompt method always stores only string value
+
+the type of NaN is number
+typf of an array is object
+typeof date is object
+typeof null is object
+type of undefined is undefined
+
+Math methods
+
+math.method(number)= There are 4 common types to round a number to integer
+
+1)math.round()to get nearest integer value
+2)math.ceil()to get upper value
+3)math.floor()to get lower value
+4)math.trunc()returns integer part of the value
+
+==>>Math.sign() Method
+		it returns if value is negative positive or null
+math.sign(-4) -1
+math.sign(0)  0
+math.sign(4)  1
+
+
+///math.pow()
+it returns the value of x to the power y
+math.pow(8,2) 64
+
+//math.sqrt()
+it reutn the dquare root of the value
+math.sqrt(81) 9
+
+//math.abs()
+it returns the absolute positive value 
+math.abs(-5.98) 5.98
+
+//min and max function 
+founding the minimum and maximum values 
+
+
+conditional statement (switch)
+syntex::
+	switch(expression)
+	{
+	case val:
+	break;
+
+===>>>>Loops
+for loop
+   for each
+   for of 
+   for in
+while loop
+do while loop
+	
+////for loop
+	for loops are using for do a repeated task until the condition remains true you know exact value you are printing for it 
+	used for printing the arrays
+
+//while loop
+	you dont know how much time you are printing for it
+
+//do while
+	first printing the statement than increment will be happening
+
+for loop
+syntex:
+	for(initialisation;condition;increment){code block}
+
+using for in loop you will get the output will be indexies
+using for of loop you will get the output will be exact values
+USING for each loop you can print the array elements
+
+synchornous
+	it is nothing but sequal execution of the code 
+asynchonous
+	it is nothing but parallel execution
+
+break statement inside the loop 
+it jumsout of the loop 
+
+continue is used to skip the iteration
+
+///exception handling
+exception is a unexpected event(what is that)
+we cannot stop the exception but we can go with alterenative ways
+
+====>>>types of errors
+syntex error
+runtime error
+	while compiling the program if yuo got any error is called runtime error
+logical error
+
+methods:
+try 
+catch
+finally
+
+Syntex::
+try{
+expression}
+catch(error){
+expression
+}
+finally{
+expression}
+
+===================================================================================================================================
+														Date: 25/04/2025
+==>>>Function 
+	A function is a block of code to perform a particlular task.
+syntex::
+	function name(paramtere1,parameter2){
+ 		function code
+		}
+
+A javascript function is defined wih the function keyword, followed by a name and parentheses().
+
+Javascrript window
+Browder window model
+	 it allows js to interact with browser
+Window( parent )
+	screen	
+	document
+	history
+	navigator
+	location
+
+example:
+	alert() is a method of window object
+window.alert() or alert()
+
+////Window methods
+==>Open method
+	it opens the new window
+
+==>Close method
+	it closes the current window
+
+==>move method
+	it move the current window
+==>resizeto method
+	it resizes the current window
+==>settimeout() method
+	it performs action after specific time 
+==>history.back()
+	going to previous webpage
+==>history.forward()	
+	goint to next webpage
+
+/widnow location 
+//assign method
+//reload method 
+//replace method
+
+===>>>Timing events
+-->settimeout()== executes a function after specific time
+-->setinterval()== same as timeout but repeats function continously
+
+
+get elementbyID() method
+	accessing elements on the page
+
+innerHTML property
+it is the easier way to get the content of the element
+
+
+document.getElementbyId
+document.getElementbyTagName
+document.getElementbyClassName
+
+====>>>>>important question
+document.getElementById9("para"0.innerHTML+=rooms[i]+"<br>"  
+
+
+====>>>>usestrict 
+-if you do not declare the property js will add defaulty var property 
+-using usestrict we can control the javascript
+-using uderstrict we can prevent from defaulty using var 
+
+===================================================================================================================================
+
+===>>onmouse enter and onmouse leave
+whenever cursor is on the image it changes 

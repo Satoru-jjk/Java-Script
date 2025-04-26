@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var weight=Number(prompt("enter your weight"))
+        var height=Number(prompt("enter your height"))
+        height=height/1000
+        var BMI=weight/(height**2)
+        if(BMI<=18.5){
+            alert("You are underweight Eat more vegetables")
+        }if(BMI<=24.9) {
+            alert("you are normal")
+        }if(BMI<=29.9){
+            alert("you are overweight you should eat less")
+        }else{
+            alert("woah you are obese why dont you stop eating")
+        }
+
+    </script>
+</body>
+</html>
