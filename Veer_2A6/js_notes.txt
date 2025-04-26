@@ -556,3 +556,8 @@ IMP things
 Try never excutes only catch and finally does in a js
 X == null (to check whether x is null or not)
 document.getelementbyid("para").innerHtml +=rooms[i]+"<br>"
+form post method requires a caches ====>>> ansewer is flase it never stores the caches
+get method we dont have a restrictions for the length ===>> false
+post mathod stores the history===>>>
+post method using for the sesnsitive data++.
+get method used for unsensitive data==>>>
